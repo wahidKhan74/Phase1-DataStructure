@@ -1,4 +1,4 @@
-package com.simplilearn.list.singlylinkedlist;
+package com.simplilearn.stack.arraystack;
 
 public class Employee {
 	

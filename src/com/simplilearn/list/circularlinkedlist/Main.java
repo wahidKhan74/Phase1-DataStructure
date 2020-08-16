@@ -1,4 +1,4 @@
-package com.simplilearn.list.singlylinkedlist;
+package com.simplilearn.list.circularlinkedlist;
 
 
 public class Main {
@@ -10,26 +10,22 @@ public class Main {
 		Employee willClark = new Employee(100, "Will Clark", "Dev", 29876.234);
 		Employee davidDoe = new Employee(100, "David Doe", "Dev", 29876.234);
 		
-		EmployeeSinglyLinkedList list = new EmployeeSinglyLinkedList();
+		EmployeeCircularLinkedList list = new EmployeeCircularLinkedList();
 		
 		System.out.println("List Size : "+list.getSize());
 		System.out.println("List Empty Status : "+list.isEmpty());
 		
-		list.addToFront(johnSmith);
-		list.addToFront(marrySmith);
-		list.addToFront(willClark);
-		list.addToFront(davidDoe);
+		list.addNode(johnSmith);
+		list.addNode(marrySmith);
+		list.addNode(willClark);
+		list.addNode(davidDoe);
 
 		System.out.println("List Size : "+list.getSize());
 		System.out.println("List Empty Status : "+list.isEmpty());
 		
 		list.printList();
 		
-		System.out.println("--------------------");
-		list.removeFromFront();
-		System.out.println("List Size : "+list.getSize());
-		System.out.println("List Empty Status : "+list.isEmpty());
-		list.printList();
+		
 	}
 
 }

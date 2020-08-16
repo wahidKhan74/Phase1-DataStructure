@@ -1,6 +1,6 @@
 package com.simplilearn.list.singlylinkedlist;
 
-public class EmployeeLinkedList {
+public class EmployeeSinglyLinkedList {
 	
 	private EmployeeNode head;
 	private int size;

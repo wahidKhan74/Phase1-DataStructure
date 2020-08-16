@@ -1,4 +1,4 @@
-package com.simplilearn.list.singlylinkedlist;
+package com.simplilearn.queue.arrayqueue;
 
 public class Employee {
 	

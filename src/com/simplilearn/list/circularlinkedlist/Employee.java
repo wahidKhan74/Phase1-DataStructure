@@ -1,4 +1,4 @@
-package com.simplilearn.list.singlylinkedlist;
+package com.simplilearn.list.circularlinkedlist;
 
 public class Employee {
 	

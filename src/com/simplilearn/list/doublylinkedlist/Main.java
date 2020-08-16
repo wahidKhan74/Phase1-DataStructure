@@ -1,4 +1,4 @@
-package com.simplilearn.list.singlylinkedlist;
+package com.simplilearn.list.doublylinkedlist;
 
 
 public class Main {
@@ -10,7 +10,7 @@ public class Main {
 		Employee willClark = new Employee(100, "Will Clark", "Dev", 29876.234);
 		Employee davidDoe = new Employee(100, "David Doe", "Dev", 29876.234);
 		
-		EmployeeSinglyLinkedList list = new EmployeeSinglyLinkedList();
+		EmployeeDoublyLinkedList list = new EmployeeDoublyLinkedList();
 		
 		System.out.println("List Size : "+list.getSize());
 		System.out.println("List Empty Status : "+list.isEmpty());
@@ -18,18 +18,30 @@ public class Main {
 		list.addToFront(johnSmith);
 		list.addToFront(marrySmith);
 		list.addToFront(willClark);
-		list.addToFront(davidDoe);
-
+		list.addToEnd(davidDoe);
+		
+		
 		System.out.println("List Size : "+list.getSize());
 		System.out.println("List Empty Status : "+list.isEmpty());
-		
 		list.printList();
 		
-		System.out.println("--------------------");
+		System.out.println();
+		System.out.println("---------------------");
+		System.out.println();
+		
+		
 		list.removeFromFront();
-		System.out.println("List Size : "+list.getSize());
-		System.out.println("List Empty Status : "+list.isEmpty());
 		list.printList();
+		System.out.println("List Size : "+list.getSize());
+		
+		System.out.println();
+		System.out.println("---------------------");
+		System.out.println();
+		
+		list.removeFromEnd();
+		list.printList();
+		System.out.println("List Size : "+list.getSize());
+		
 	}
 
 }
